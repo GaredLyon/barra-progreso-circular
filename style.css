@@ -46,8 +46,8 @@ body
     fill: none;
     stroke: url(#gradientColor);
     stroke-width: 20px;
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
+    stroke-dasharray: 550; /* se divide el borde y empieza a haber mas espacio entre las diviciones */
+    stroke-dashoffset: 550; /* es para especficar la distancia de inicio del trazo, es como agregarle un espacio de pading aumentando la distancia entre el inicio y lo demas*/
 
     animation: loading 5s linear forwards;
 }
@@ -56,6 +56,6 @@ body
 {
     100% 
     {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 0; /* punto de partida o final*/
     }
 }
